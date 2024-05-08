@@ -20,11 +20,11 @@ body {
 
 .head {
     width: 100%;
-    background-image:linear-gradient( var(--heading-color), var(--background-color));
-    height: 200px;
-    text-align: end;
+    background-color: var(--heading-color);
     margin: 0;
+    padding: 2% 0;
     color: var(--heading-font-color);
+    text-align: center;
 }
 
 img {
@@ -33,6 +33,7 @@ img {
     margin: 5px;
     border-radius: var(--img-radius);
     box-shadow: var(--img-shawdow);
+    display: inline-flex;
 
 }
 
@@ -41,16 +42,10 @@ img:hover {
     transition-duration: .5s;
 }
 
-
-h1 {
-    width: 100%;
-
-}
-
 .head li:hover {
     text-decoration: underline white;
     font-weight: bold;
-    
+
 }
 
 li {
@@ -66,7 +61,34 @@ a {
 
 .head a {
     color: var(--heading-font-color);
-    
+
     text-decoration: underline;
 }
 
+article {
+    width: 90%;
+}
+
+.box {
+    
+    width: 40%;
+    margin: 0;
+    padding: 0; 
+    background-color: var(--section-color);
+    border-radius: var(--img-radius);
+}
+
+aside {
+    width: auto;
+    height: auto;
+}
+
+
+
+/* 
+@media screen {
+    article {
+        width: 100%;
+    }
+}
+*/
