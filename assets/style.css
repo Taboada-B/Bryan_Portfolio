@@ -26,6 +26,7 @@ body {
     color: var(--heading-font-color);
     text-align: center;
 }
+
 /*forcing links to be white in the header */
 .head a {
     color: var(--heading-font-color);
@@ -39,19 +40,10 @@ img {
     border-radius: var(--img-radius);
     box-shadow: var(--img-shawdow);
     /*come back to position */
-    
+
 
 }
-/* when mouse hovers over image, it grows and take time to transition */
-img:hover {
-    transform: scale(1.02);
-    transition-duration: .5s;
-}
-/* when hovering over the list in the heading, they underline and bold */
-.head li:hover {
-    text-decoration: underline white;
-    font-weight: bold;
-}
+
 /* removes the bullet points, give some spacing, and aligns them next to eachother */
 li {
     list-style: none;
@@ -64,6 +56,7 @@ a {
     text-decoration: none;
     color: var(--font-color);
 }
+
 /* in the header puts a color to the link*/
 
 p {
@@ -78,21 +71,28 @@ article {
 .box-1 {
     width: 100%;
     margin: 1%;
-    padding: 1%; 
-    border: solid ;
+    padding: 1%;
+    border: solid;
     background-color: var(--section-color);
     border-radius: var(--img-radius);
 }
-.flex {
-    display:flex;
-    flex-wrap: wrap;
-    
+
+.box-1 img {
+    height: 400px;
+    width: auto;
 }
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
 .boxes {
     flex: 1 0 25%;
     margin: 1%;
-    padding: 1%; 
-    border: solid ;
+    padding: 1%;
+    border: solid;
     background-color: var(--section-color);
     border-radius: var(--img-radius);
 }
@@ -100,13 +100,30 @@ article {
 .box-2 {
     width: 100%;
     margin: 1%;
-    padding: 1%; 
-    border: solid ;
+    padding: 1%;
+    border: solid;
     background-color: var(--section-color);
     border-radius: var(--img-radius);
 }
+
 .box-2 ul {
     text-align: center;
+}
+
+/* when mouse hovers over image, it grows and take time to transition */
+img:hover {
+    transform: scale(1.02);
+    transition-duration: .5s;
+}
+
+/* when hovering over the list in the heading, they underline and bold */
+.head li:hover {
+    text-decoration: underline white;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 /*
@@ -117,31 +134,25 @@ aside {
 
 */
 
-/* 
-@media screen {
-    article {
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 992px) {
-  header {
-    background: #772014;
-  }
-}
-
-Large smartphones - navbar changes color 
 @media screen and (max-width: 768px) {
-    nav {
-      background-color: #bb8588;
+    img {
+        height: 200px
     }
-  }
-  
-   Small smartphones - image placeholders change color
-  @media screen and (max-width: 576px) {
-    .sample-img {
-      background-color: #8ac4ff;
+
+    .box-1 img {
+        height: 400px;
     }
-  }
-  
-*/
+
+}
+
+/*Small smartphones - image placeholders change color */
+@media screen and (max-width: 576px) {
+    img {
+        height: 150px
+    }
+
+    .box-1 img {
+        height: 300px;
+    }
+
+}
