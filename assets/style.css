@@ -26,6 +26,11 @@ body {
     color: var(--heading-font-color);
     text-align: center;
 }
+/*forcing links to be white in the header */
+.head a {
+    color: var(--heading-font-color);
+
+}
 
 img {
     height: 200px;
@@ -33,57 +38,84 @@ img {
     margin: 5px;
     border-radius: var(--img-radius);
     box-shadow: var(--img-shawdow);
-    display: inline-flex;
+    /*come back to position */
+    
 
 }
-
+/* when mouse hovers over image, it grows and take time to transition */
 img:hover {
     transform: scale(1.02);
     transition-duration: .5s;
 }
-
+/* when hovering over the list in the heading, they underline and bold */
 .head li:hover {
     text-decoration: underline white;
     font-weight: bold;
-
 }
-
+/* removes the bullet points, give some spacing, and aligns them next to eachother */
 li {
     list-style: none;
     margin: 1% 3%;
     display: inline-block;
 }
 
+/*removes any decorations to links and sets to standard font color */
 a {
     text-decoration: none;
     color: var(--font-color);
 }
+/* in the header puts a color to the link*/
 
-.head a {
-    color: var(--heading-font-color);
-
-    text-decoration: underline;
+p {
+    margin: 2%;
+    text-align: center;
 }
 
 article {
     width: 90%;
 }
 
-.box {
+.box-1 {
+    width: 100%;
+    margin: 1%;
+    padding: 1%; 
+    border: solid ;
+    background-color: var(--section-color);
+    border-radius: var(--img-radius);
+}
+.flex {
+    display:flex;
+    flex-wrap: wrap;
     
-    width: 40%;
-    margin: 0;
-    padding: 0; 
+}
+.boxes {
+    flex: 1 0 25%;
+    margin: 1%;
+    padding: 1%; 
+    border: solid ;
     background-color: var(--section-color);
     border-radius: var(--img-radius);
 }
 
+.box-2 {
+    width: 100%;
+    margin: 1%;
+    padding: 1%; 
+    border: solid ;
+    background-color: var(--section-color);
+    border-radius: var(--img-radius);
+}
+.box-2 ul {
+    text-align: center;
+}
+
+/*
 aside {
     width: auto;
     height: auto;
 }
 
-
+*/
 
 /* 
 @media screen {
@@ -91,4 +123,25 @@ aside {
         width: 100%;
     }
 }
+
+@media screen and (max-width: 992px) {
+  header {
+    background: #772014;
+  }
+}
+
+Large smartphones - navbar changes color 
+@media screen and (max-width: 768px) {
+    nav {
+      background-color: #bb8588;
+    }
+  }
+  
+   Small smartphones - image placeholders change color
+  @media screen and (max-width: 576px) {
+    .sample-img {
+      background-color: #8ac4ff;
+    }
+  }
+  
 */
