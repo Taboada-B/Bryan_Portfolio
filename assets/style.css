@@ -37,15 +37,6 @@ body {
 
 }
 
-img {
-    height: 200px;
-    width: auto;
-    margin: 5px;
-    border-radius: var(--img-radius);
-    box-shadow: var(--img-shawdow);
-    /*come back to position */
-}
-
 /* removes the bullet points, give some spacing, and aligns them next to eachother */
 li {
     list-style: none;
@@ -65,9 +56,18 @@ p {
     margin: 2%;
     text-align: center;
 }
+main {
+    display: flex;
+    max-width: 95%;
+}
 
 article {
-    width: 75%;
+  flex: 70%;
+}
+
+aside {
+    flex: 30%;
+    flex-wrap: wrap; 
 }
 
 .box-1 {
@@ -77,16 +77,6 @@ article {
     border: solid;
     background-color: var(--section-color);
     border-radius: var(--img-radius);
-}
-
-.box-1 img {
-    height: 400px;
-    width: auto;
-}
-
-.flex {
-    display: flex;
-    flex-wrap: wrap;
 }
 
 .boxes {
@@ -111,6 +101,29 @@ article {
     text-align: center;
 }
 
+img {
+    height: 200px;
+    width: auto;
+    margin: 5px;
+    border-radius: var(--img-radius);
+    box-shadow: var(--img-shawdow);
+}
+    /*come back to position */
+
+.box-1 img {
+    height: 400px;
+    width: auto;
+}
+
+.side-box img {
+    width: fit-content;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 /* when mouse hovers over image, it grows and take time to transition */
 img:hover {
     transform: scale(1.02);
@@ -127,13 +140,23 @@ a:hover {
     text-decoration: underline;
 }
 
-/*
-aside {
-    width: auto;
-    height: auto;
+.side-box {
+    margin-top: 3%;
+    border: solid;
+    background-color: var(--section-color);
+    border-radius: var(--img-radius);
+    margin: 1%;
 }
 
-*/
+.side-box li {
+    list-style: circle;
+}
+
+footer {
+    text-align: center;
+    margin: 2%;
+    line-height: 0px;
+}
 
 @media screen and (max-width: 768px) {
     img {
