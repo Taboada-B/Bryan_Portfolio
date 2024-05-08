@@ -101,9 +101,8 @@ aside {
 }
 
 .box-2 {
-    width: 100%;
-    margin: 1%;
-    padding: 1%;
+    width: 95%;
+    margin: 2%;
     border: solid;
     background-color: var(--section-color);
     border-radius: var(--img-radius);
@@ -133,12 +132,11 @@ img {
     max-height: 200px;
     width: auto;
 }
-
+/* need to figure out the formating of picture locaton when screen shrinks*/
 .side-box img {
-    max-width: 400px;
+    max-width: 350px;
     height: auto;
-    margin-left: auto;
-    margin: 15% 0;
+    margin: 10% auto 0 auto;
 
 }
 
@@ -208,3 +206,9 @@ main {
     }
 
 }
+
+/* I need to add links to contacts, format picture locations
+add anything fun, publish and make sure everything shows, 
+possibly make about me smaller and stay on the side, 
+make resume open in separate tab, Add the hello world 
+im bryan and passionate web developer */
