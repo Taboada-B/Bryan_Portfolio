@@ -9,6 +9,10 @@
     --img-shawdow: 0px 5px 10px black;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: var(--background-color);
     color: var(--font-color);
@@ -40,8 +44,6 @@ img {
     border-radius: var(--img-radius);
     box-shadow: var(--img-shawdow);
     /*come back to position */
-
-
 }
 
 /* removes the bullet points, give some spacing, and aligns them next to eachother */
@@ -65,7 +67,7 @@ p {
 }
 
 article {
-    width: 90%;
+    width: 75%;
 }
 
 .box-1 {
@@ -85,7 +87,6 @@ article {
 .flex {
     display: flex;
     flex-wrap: wrap;
-
 }
 
 .boxes {
