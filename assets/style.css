@@ -73,12 +73,12 @@ main {
 }
 
 article {
-    flex: 68%;
+    flex: 70%;
 }
 
 aside {
 
-    flex: 28%;
+    flex: 30%;
     flex-wrap: wrap;
 }
 
@@ -114,13 +114,15 @@ aside {
 }
 
 img {
-
     margin: 5px;
     border-radius: var(--img-radius);
     box-shadow: var(--img-shawdow);
 }
 
 /*come back to position */
+img {
+    box-sizing: border-box;
+}
 
 .box-1 img {
     height: 400px;
@@ -128,12 +130,11 @@ img {
 }
 
 .boxes img {
-    height: 200px;
+    max-height: 200px;
     width: auto;
 }
 
 .side-box img {
-    box-sizing: border-box;
     max-width: 400px;
     height: auto;
     margin-left: auto;
@@ -180,15 +181,20 @@ footer {
     line-height: 0px;
 }
 
+@media screen and (max-width: 992px ) {
+main {
+    display:block;
+}
+}
+
 @media screen and (max-width: 768px) {
     img {
         height: 200px
     }
-
     .box-1 img {
         height: 400px;
     }
-
+ 
 }
 
 /*Small smartphones - image placeholders change color */
