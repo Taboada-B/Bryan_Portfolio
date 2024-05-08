@@ -37,6 +37,12 @@ body {
 
 }
 
+.subtitle , .subtitle p , .subtitle h2 {
+    text-align: left ;
+    margin: 1% 5%;
+}
+
+
 h2,
 h4 {
     text-align: center;
@@ -73,12 +79,12 @@ main {
 }
 
 article {
-    flex: 70%;
+    flex: 95%;
 }
 
 aside {
 
-    flex: 30%;
+    flex: 90%;
     flex-wrap: wrap;
 }
 
@@ -168,11 +174,11 @@ a:hover {
     border-radius: var(--img-radius);
     margin: 1%;
 }
-
+/* 
 .side-box li {
-    list-style: circle;
+    list-style: square;
 }
-
+*/
 footer {
     text-align: center;
     margin: 2%;
@@ -207,7 +213,7 @@ main {
 
 }
 
-/* I need to add links to contacts, format picture locations
+/* format picture locations
 add anything fun, publish and make sure everything shows, 
 possibly make about me smaller and stay on the side, 
 make resume open in separate tab, Add the hello world 
