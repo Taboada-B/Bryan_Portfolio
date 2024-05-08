@@ -37,6 +37,16 @@ body {
 
 }
 
+h2,
+h4 {
+    text-align: center;
+}
+
+h3 {
+    text-align: left;
+    margin-left: 15px;
+}
+
 /* removes the bullet points, give some spacing, and aligns them next to eachother */
 li {
     list-style: none;
@@ -56,18 +66,20 @@ p {
     margin: 2%;
     text-align: center;
 }
+
 main {
     display: flex;
     max-width: 95%;
 }
 
 article {
-  flex: 70%;
+    flex: 68%;
 }
 
 aside {
-    flex: 30%;
-    flex-wrap: wrap; 
+
+    flex: 28%;
+    flex-wrap: wrap;
 }
 
 .box-1 {
@@ -102,21 +114,31 @@ aside {
 }
 
 img {
-    height: 200px;
-    width: auto;
+
     margin: 5px;
     border-radius: var(--img-radius);
     box-shadow: var(--img-shawdow);
 }
-    /*come back to position */
+
+/*come back to position */
 
 .box-1 img {
     height: 400px;
     width: auto;
 }
 
+.boxes img {
+    height: 200px;
+    width: auto;
+}
+
 .side-box img {
-    width: fit-content;
+    box-sizing: border-box;
+    max-width: 400px;
+    height: auto;
+    margin-left: auto;
+    margin: 15% 0;
+
 }
 
 .flex {
