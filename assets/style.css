@@ -99,7 +99,7 @@ article {
 }
 /* setting up modules */
 .box-1 {
-    width: 100%;
+    width: 95%;
     margin: 1%;
     padding: 1%;
     border: solid;
@@ -195,13 +195,14 @@ footer {
     }
 
     .box-1 img {
-        height: 400px;
+        box-sizing: content-box;
+        width: auto;
     }
 
 }
 
 /*adjusting images for even smaller screens */
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 664px) {
     img {
         height: 150px
     }
