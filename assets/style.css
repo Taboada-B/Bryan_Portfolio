@@ -1,3 +1,4 @@
+/*Color schemes, and reusable variables */
 :root {
     --heading-color: #80353b;
     --heading-font-color: white;
@@ -13,6 +14,7 @@
     box-sizing: border-box;
 }
 
+/*Setting up initial parameters for page */
 body {
     background-color: var(--background-color);
     color: var(--font-color);
@@ -22,6 +24,7 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+/* establishihng size, color, etc for header portion */
 .head {
     width: 100%;
     background-color: var(--heading-color);
@@ -31,23 +34,33 @@ body {
     text-align: center;
 }
 
-/*forcing links to be white in the header */
+/*removes any decorations to links and sets to standard font color */
+a {
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+/*forcing links to be heading font color in the header */
 .head a {
     color: var(--heading-font-color);
 
 }
 
-.subtitle , .subtitle p , .subtitle h2 {
-    text-align: left ;
+/*Subtitle alignment */
+.subtitle,
+.subtitle p,
+.subtitle h2 {
+    text-align: left;
     margin: 1% 5%;
 }
 
-
+/* alighmnet for headings  */
 h2,
 h4 {
     text-align: center;
 }
 
+/*subtitles alignment and underline */
 h3 {
     text-align: left;
     margin-left: 15px;
@@ -61,38 +74,30 @@ li {
     display: inline-block;
 }
 
-/*removes any decorations to links and sets to standard font color */
-a {
-    text-decoration: none;
-    color: var(--font-color);
-}
-
-/* in the header puts a color to the link*/
-
+/* paragraph alignment */
 p {
     margin: 2%;
     text-align: center;
 }
-
+/*allowing boxes to flex to size  */
 main {
     display: flex;
     max-width: 95%;
+}
+/*allowing each module to adjust and wrap to new row */
+.flex {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 article {
     flex: 95%;
 }
-/*
-aside {
-
-    flex: 30%;
-    flex-wrap: wrap;
-}*/
-
+/*centering text and images */
 .center {
     text-align: center;
 }
-
+/* setting up modules */
 .box-1 {
     width: 100%;
     margin: 1%;
@@ -101,7 +106,7 @@ aside {
     background-color: var(--section-color);
     border-radius: var(--img-radius);
 }
-
+/* setting up modules */
 .boxes {
     flex: 1 0 25%;
     margin: 1%;
@@ -110,7 +115,7 @@ aside {
     background-color: var(--section-color);
     border-radius: var(--img-radius);
 }
-
+/* setting up modules */
 .box-2 {
     width: 95%;
     margin: 2%;
@@ -120,32 +125,37 @@ aside {
     border-radius: var(--img-radius);
 }
 
-.box-2 ul {
+ul {
     text-align: center;
-
+    padding-inline-start: 0;
 }
-
+/* rules for all images */
 img {
     margin: 5px;
     border-radius: var(--img-radius);
     box-shadow: var(--img-shawdow);
     box-sizing: border-box;
-    /*justify-content: center;*/
 }
 
+ /*specific sizing for larger modules */
 .box-1 img {
     height: 400px;
     width: auto;
 }
 
+ /*specific sizing for smaller modules */
 .boxes img {
     max-height: 200px;
     width: auto;
 }
 
-.flex {
-    display: flex;
-    flex-wrap: wrap;
+/*giving skills boxes */
+.box-1 li {
+    padding: 1% 2%;
+    height: 2%;
+    width: fit-content;
+    background-color: var(--background-color);
+    border-radius: var(--img-radius);
 }
 
 /* when mouse hovers over image, it grows and take time to transition */
@@ -160,6 +170,7 @@ img:hover {
     font-weight: bold;
 }
 
+/* add a underline when hovering over links */
 a:hover {
     text-decoration: underline;
 }
@@ -171,23 +182,25 @@ footer {
     line-height: 0px;
 }
 
-@media screen and (max-width: 992px ) {
-main {
-    display:block;
+/* adjusting for smaller screens, each module is a block element instad of flexing */
+@media screen and (max-width: 992px) {
+    main {
+        display: block;
+    }
 }
-}
-
+/*adjusting image sizes */
 @media screen and (max-width: 768px) {
     img {
         height: 200px
     }
+
     .box-1 img {
         height: 400px;
     }
- 
+
 }
 
-/*Small smartphones - image placeholders change color */
+/*adjusting images for even smaller screens */
 @media screen and (max-width: 576px) {
     img {
         height: 150px
@@ -198,7 +211,3 @@ main {
     }
 
 }
-
-/* 
-add anything fun, publish and make sure everything shows, 
-make resume open in separate tab,  */
